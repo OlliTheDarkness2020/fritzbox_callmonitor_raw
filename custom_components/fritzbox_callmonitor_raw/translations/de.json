@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "FRITZ!Box Anrufmonitor (Raw + TR-064)",
+        "description": "Verbinden Sie sich mit dem FRITZ!Box-Anrufmonitor (TCP/1012) und lösen Sie optional Namen über das TR-064-Telefonbuch auf.",
+        "data": {
+          "host": "Host",
+          "callmonitor_port": "Anrufmonitor Port",
+          "tr064_port": "TR-064 Port",
+          "username": "Benutzername",
+          "password": "Kennwort",
+          "phonebook_id": "Telefonbuch ID",
+          "prefixes": "Präfixe (durch Komma getrennt)",
+          "name": "Name"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "call_state": {
+        "name": "Anrufstatus",
+        "state": {
+          "idle": "Leerlauf",
+          "ringing": "Klingeln",
+          "dialing": "Wählvorgang",
+          "talking": "Gespräch"
+        }
+      }
+    }
+  }
+}
